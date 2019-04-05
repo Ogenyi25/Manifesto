@@ -89,3 +89,10 @@
     height: auto;
   }
 }
+
+
+/* social Logos design starts here */
+.landing socialLogo{
+  flex: right;
+  align-content: flex-end;
+}

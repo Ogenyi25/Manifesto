@@ -1,0 +1,8 @@
+   .landing .logo-container {
+    margin: 30px;
+  }
+  
+  .landing .logo-container img {
+    width: 30%;
+    height: 50%;
+  }

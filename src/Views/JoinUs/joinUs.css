@@ -1,0 +1,42 @@
+
+body{
+background: lavender
+}
+
+.App {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    margin: 50% auto;
+    margin-top: 100px;
+    height: 450px;
+    background: rgb(177, 174, 170);
+    border: solid 10px whitesmoke;
+    border-radius: 20px 0px 20px 0px;
+}
+.app {
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 100vh;
+    width: 300px;
+    margin: 20px;
+    
+    background: rgb(177, 174, 170);
+    border: solid 10px whitesmoke;
+    border-radius: 20px 0px 20px 0px;
+   }
+
+
+.text-muted {
+    color:greenyellow;
+  }
+
+  .mb-3 {
+    width: 100%;
+    height: auto;
+    padding: 6px 24px;
+  }
