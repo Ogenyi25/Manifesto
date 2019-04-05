@@ -1,7 +1,21 @@
-html, body {
-  height: 100%;
+html,
+body {
   margin: 0;
   padding: 0;
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat
+    0 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
 }
 
 button {
@@ -29,21 +43,21 @@ button {
   position: relative;
   border-bottom: 4px solid #2b8bc6;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   font-size: 15px;
   text-align: left;
   text-indent: 5px;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 
-/* Just for presentation */  
+  /* Just for presentation */
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 button:active {
-  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
   top: 1px;
 }
 
@@ -57,10 +71,10 @@ button:after {
   border-left: 16px solid transparent;
   border-right: 20px solid #187dbc;
   position: absolute;
-  opacity: 0.6; 
+  opacity: 0.6;
   right: 0;
   top: 0;
-  border-radius: 0 5px 5px 0;  
+  border-radius: 0 5px 5px 0;
 }
 
 button.back {
@@ -78,8 +92,8 @@ button.back:after {
   border-right: 16px solid transparent;
   border-left: 20px solid #187dbc;
   position: absolute;
-  opacity: 0.6; 
+  opacity: 0.6;
   left: 0;
   top: 0;
-  border-radius: 5px 0 0 5px;    
+  border-radius: 5px 0 0 5px;
 }

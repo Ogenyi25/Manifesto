@@ -21,7 +21,7 @@ class Manifesto extends Component {
         <div className="manifesto-logo-container">
           <img src={logo} alt="qr8tors_logo" />
         </div>
-        <div className="manifesto-body" >
+        <div className="manifesto-body">
           <h3
             style={{
               textAlign: "center"
@@ -47,6 +47,15 @@ class Manifesto extends Component {
             <li>Sustainable Design</li>
             <li>Digital Economy</li>
           </ul>
+          <div
+            style={{
+              textAlign: "center"
+            }}
+          >
+            <button className="back">
+              <Link to="/join-us">Join Us</Link>
+            </button>
+          </div>
         </div>
       </div>
     );
