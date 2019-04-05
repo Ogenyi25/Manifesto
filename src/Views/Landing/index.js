@@ -29,7 +29,7 @@ class Landing extends Component {
           <button>
             <Link to="/join-us">JoinUs</Link>
           </button>
-          <button>
+          <button className="back" >
             <Link to="/manifesto">Manifesto</Link>
           </button>
         </div>

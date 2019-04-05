@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import {
-  Container, Col, Form,
-  FormGroup, Label, Input,
-  Button,
-} from 'reactstrap';
 import "./joinUs.css";
 class JoinUs extends Component {
   constructor(props) {
@@ -12,52 +7,50 @@ class JoinUs extends Component {
   }
 
   handleSubmit(e) {
-    alert('The value is: ' + this.input.value);
+    alert("The value is: " + this.input.value);
     e.preventDefault();
   }
   render() {
     return (
-      <div className="join">
-        <Container className="App">
-          <h2>Join Us</h2>
-          <Form className="form">
-            <Col>
-              <FormGroup>
-                <Label>Your name</Label>
-                <Input
-                  icon="user"
-                  type="name"
-                  name="name"
-                  id="exampleName"
-                  placeholder="your full name"
-                />
-              </FormGroup>
-            </Col>
-            <Col>
-              <FormGroup>
-                <Label for="examplePassword">Password</Label>
-                <Input
-                  type="password"
-                  name="password"
-                  id="examplePassword"
-                  placeholder="********"
-                />
-              </FormGroup>
-            </Col>
-            <Col>
-              <FormGroup>
-                <Label for="examplePhonenumber">Phone Number</Label>
-                <Input
-                  type="phonenumber"
-                  name="phonenumber"
-                  id="examplePhonenumber"
-                  placeholder="081********"
-                />
-              </FormGroup>
-            </Col>
-            <Button>Submit</Button>
-          </Form>
-        </Container>
+      <div className="joinus-container">
+        <h2>Join Us</h2>
+        <div className="page">
+          <div className="page__demo">
+            <label className="field a-field a-field_a1 page__field">
+              <input
+                className="field__input a-field__input"
+                placeholder="e.g. Danny"
+                required
+              />
+              <span className="a-field__label-wrap">
+                <span className="a-field__label">Full name</span>
+              </span>
+            </label>
+            <label className="field a-field a-field_a2 page__field">
+              <input
+                className="field__input a-field__input"
+                placeholder="e.g. 080********"
+                required
+              />
+              <span className="a-field__label-wrap">
+                <span className="a-field__label">Phone Number</span>
+              </span>
+            </label>
+            <label className="field a-field a-field_a2 page__field">
+              <input
+                className="field__input a-field__input"
+                placeholder="e.g. testmail@test.com"
+                required
+              />
+              <span className="a-field__label-wrap">
+                <span className="a-field__label">E-mail</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div className="button-container" >
+          <button>Submit</button>
+        </div>
       </div>
     );
   }
