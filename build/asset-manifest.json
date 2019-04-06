@@ -1,0 +1,18 @@
+{
+  "main.css": "/static/css/main.eb2986d9.chunk.css",
+  "main.js": "/static/js/main.5047dc46.chunk.js",
+  "main.js.map": "/static/js/main.5047dc46.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.b8abcbeb.chunk.js": "/static/js/2.b8abcbeb.chunk.js",
+  "static/js/2.b8abcbeb.chunk.js.map": "/static/js/2.b8abcbeb.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.7cc17a3a00f8a168a8793f1afa2ed4b3.js": "/precache-manifest.7cc17a3a00f8a168a8793f1afa2ed4b3.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.eb2986d9.chunk.css.map": "/static/css/main.eb2986d9.chunk.css.map",
+  "static/media/index.css": "/static/media/impact.8fc622c3.ttf",
+  "static/media/fblogo.png": "/static/media/fblogo.29f4420f.png",
+  "static/media/iglogo.png": "/static/media/iglogo.190f937c.png",
+  "static/media/logo.png": "/static/media/logo.e179a723.png",
+  "static/media/twlogo.png": "/static/media/twlogo.b173b716.png"
+}
