@@ -15,7 +15,7 @@
 }
 
 .manifesto .manifesto-body .plus {
-  list-style: +;
+  list-style: square;
 }
 
 /* .manifesto .manifesto-body .plus li:before {
