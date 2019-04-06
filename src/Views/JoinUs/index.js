@@ -10,6 +10,7 @@ class JoinUs extends Component {
       loading: false,
       success: false,
       error: false,
+      message: "",
       inputs: {
         fullName: "",
         phoneNumber: "",
@@ -44,22 +45,17 @@ class JoinUs extends Component {
     this.setState({
       loading: true
     });
-    callApi("/user/create", { ...this.state.inputs }, "POST")
+    callApi("/users/create", { ...this.state.inputs }, "POST")
       .then(data => {
         this.setState({
           loading: false,
-          success: true,
-          inputs: {
-            fullName: "",
-            phoneNumber: "",
-            email: ""
-          }
+          success: true
         });
       })
       .catch(err => {
-        console.log(err);
         this.setState({
           ...this.state,
+          message: err.response.data.message,
           loading: false,
           success: true,
           error: true
@@ -82,18 +78,23 @@ class JoinUs extends Component {
       <div className="joinus-container">
         {this.state.success && !this.state.loading ? (
           <div>
-            <h4>
-              Thanks for registering {fullName}, we'll keep you abreast with
-              developments. Stay tuned!!!
-            </h4>
             {this.state.error ? (
-              <button className="back" onClick={this.checkDetails}>
-                Check
-              </button>
+              <React.Fragment>
+                <h4>{this.state.message}</h4>
+                <button className="back" onClick={this.checkDetails}>
+                  Check
+                </button>
+              </React.Fragment>
             ) : (
-              <button className="back">
-                <Link to="/">Home</Link>
-              </button>
+              <React.Fragment>
+                <h4>
+                  Thanks for registering {fullName}, we'll keep you abreast with
+                  developments. Stay tuned!!!
+                </h4>
+                <button className="back">
+                  <Link to="/">Home</Link>
+                </button>
+              </React.Fragment>
             )}
           </div>
         ) : this.state.loading ? (

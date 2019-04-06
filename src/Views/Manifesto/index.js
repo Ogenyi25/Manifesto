@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import fblogo from '../../assets/fblogo.png'
-import iglogo from '../../assets/iglogo.png'
-import twlogo from '../../assets/twlogo.png'
+import fblogo from "../../assets/fblogo.png";
+import iglogo from "../../assets/iglogo.png";
+import twlogo from "../../assets/twlogo.png";
 import "./manifesto.css";
 
 const manifesto = [
@@ -27,7 +27,8 @@ class Manifesto extends Component {
         <div className="manifesto-body">
           <h3
             style={{
-              textAlign: "center", fontFamily: "impact"
+              textAlign: "center",
+              fontFamily: "Impact"
             }}
           >
             Qr8tors Manifesto
@@ -58,17 +59,36 @@ class Manifesto extends Component {
             <button className="back">
               <Link to="/join-us">Join Us</Link>
             </button>
+            <div>
+              <p>Qr8tors Manifesto by Qr8tors Idea Lab</p>
+              <h4 style={{ textAlign: "center" }}>Follow Us</h4>
+              <div className="socialLogo">
+                <span>
+                  <a href="#">
+                    <img
+                      src={fblogo}
+                      alt="fb_logo"
+                      style={{ maxHeight: "30px" }}
+                    />{" "}
+                  </a>
+                  <a href="#">
+                    <img
+                      src={iglogo}
+                      alt="ig_logo"
+                      style={{ marginLeft: "30px", maxHeight: "30px" }}
+                    />{" "}
+                  </a>
+                  <a href="#">
+                    <img
+                      src={twlogo}
+                      alt="tw_logo"
+                      style={{ marginLeft: "30px", maxHeight: "30px" }}
+                    />{" "}
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
-          <br></br>
-          <p>Qr8tors Manifesto by Qr8tors Idea Lab</p>
-        <h4 style={{ textAlign: 'center'}}>Follow Us</h4><br></br>
-          <div className="socialLogo">
-          <span>
-            <a href="#"><img src={fblogo} alt="fb_logo" style={{ maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={iglogo} alt="ig_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={twlogo} alt="tw_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
-          </span>
-        </div>
         </div>
       </div>
     );

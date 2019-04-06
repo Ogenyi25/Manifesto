@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const config = {
-  fetchUrl: "https://qr8torsserver.herokuapp.com/api/v1"
+  fetchUrl: "https://qr8torsserver.herokuapp.com/api/v1",
+  // fetchUrl: "http://localhost:5000/api/v1"
 };
 
 const callPlainApi = (url, data, method) => {

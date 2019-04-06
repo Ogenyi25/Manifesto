@@ -5,14 +5,12 @@
 }
 
 .manifesto .manifesto-body ol {
-  list-style-type: upper-roman;
-  font-family: verdana;
+  list-style-type: lower-roman;
   text-align: center;
 }
 
 .manifesto .manifesto-body p {
   text-align: center;
-  font-family: verdana;
   
 }
 
@@ -40,7 +38,6 @@
   cursor: pointer;
   color: #666666;
   text-shadow: 0px 1px 0px #ffffff;
-  font-family: Arial;
   font-size: 15px;
   font-weight: bold;
   padding: 6px 24px;
