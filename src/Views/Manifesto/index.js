@@ -43,14 +43,14 @@ class Manifesto extends Component {
             creatives and develop projects that move culture forward.
           </p>
           <p>Our interest include:</p>
-          <ol className="plus">
+          <ul className="plus">
             <li>Internet/Pop Culture</li>
             <li>Tech Innovations</li>
             <li>Media & Entertainment</li>
             <li>Urbanization</li>
             <li>Sustainable Design</li>
             <li>Digital Economy</li>
-          </ol>
+          </ul>
           <div
             style={{
               textAlign: "center"

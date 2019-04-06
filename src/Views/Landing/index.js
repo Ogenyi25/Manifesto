@@ -20,11 +20,11 @@ class Landing extends Component {
           <img src={logo} alt="qr8tors_logo" />
         </div>
         <div className="button-container" >
-          <button className="back" >
-            <Link to="/manifesto">Manifesto</Link>
-          </button>
           <button>
             <Link to="/join-us">JoinUs</Link>
+          </button>
+          <button className="back" >
+            <Link to="/manifesto">Manifesto</Link>
           </button>
         </div><br></br>
         <p>Qr8tors Manifesto by Qr8tors Idea Lab</p>

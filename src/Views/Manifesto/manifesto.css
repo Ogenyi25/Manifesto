@@ -15,13 +15,13 @@
 }
 
 .manifesto .manifesto-body .plus {
-  list-style: none;
+  list-style: +;
 }
 
-.manifesto .manifesto-body .plus li:before {
+/* .manifesto .manifesto-body .plus li:before {
   content: "+";
   margin-right: 4px;
-}
+} */
 
 .manifesto .manifesto-logo-container {
   text-align: center;
@@ -43,6 +43,7 @@
   padding: 6px 24px;
   text-decoration: none;
 }
+
 .landing socialLogo{
   flex: left;
   align-items: center;
