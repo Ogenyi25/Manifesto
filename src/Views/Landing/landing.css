@@ -23,11 +23,17 @@
   min-width: 80%;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .button-container button a {
   text-decoration: none;
   color: inherit;
+}
+
+.button-container .back {
+background-color: white;
+
 }
 
 .button-container button {
@@ -75,4 +81,5 @@
 .landing socialLogo{
   flex: right;
   align-content: flex-end;
+  border-spacing: 50%;
 }
