@@ -53,9 +53,26 @@ class JoinUs extends Component {
         });
       })
       .catch(err => {
+        let errorsArray = err.response.data.errors ? err.response.data.errors  : [];
+        let errorMessage = errorsArray.map(err => {
+          console.log(err)
+          let result = "";
+          if (err.param === "phoneNumber") {
+            result = "Phone Number";
+          }
+          if (err.param === "fullName") {
+            result = "Full Name";
+          }
+          if (err.param === "email") {
+            result = "Email";
+          }
+          return result;
+        });
         this.setState({
           ...this.state,
-          message: err.response.data.message,
+          message:
+            err.response.data.message ||
+            `Provide valid details for ${errorMessage.join(", ")}`,
           loading: false,
           success: true,
           error: true
