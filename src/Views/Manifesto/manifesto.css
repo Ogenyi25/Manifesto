@@ -4,12 +4,25 @@
   margin: auto;
 }
 
-.manifesto .manifesto-body ul {
-  list-style-image: url(../../assets/logo-list.png);
+.manifesto .manifesto-body ol {
+  list-style-type: upper-roman;
+  font-family: verdana;
+  text-align: center;
 }
 
 .manifesto .manifesto-body p {
-  text-align: center
+  text-align: center;
+  font-family: verdana;
+  
+}
+
+.manifesto .manifesto-body .plus {
+  list-style: none;
+}
+
+.manifesto .manifesto-body .plus li:before {
+  content: "+";
+  margin-right: 4px;
 }
 
 .manifesto .manifesto-logo-container {
@@ -32,4 +45,9 @@
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
+}
+.landing socialLogo{
+  flex: left;
+  align-items: center;
+  border-spacing: 50%;
 }

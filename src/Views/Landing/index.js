@@ -14,24 +14,27 @@ class Landing extends Component {
     return (
       <div className="landing">
         {/* <FacebookIcon size={32} round={true} /> */}
-        <div className="socialLogo">
-          <span>
-            <a href="#"><img src={fblogo} alt="fb_logo" style={{ maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={iglogo} alt="ig_logo" style={{ maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={twlogo} alt="tw_logo" style={{ maxHeight: '30px' }} /> </a>
-          </span>
-        </div>
+        
 
         <div className="logo-container" >
           <img src={logo} alt="qr8tors_logo" />
         </div>
         <div className="button-container" >
-          <button>
-            <Link to="/join-us">JoinUs</Link>
-          </button>
           <button className="back" >
             <Link to="/manifesto">Manifesto</Link>
           </button>
+          <button>
+            <Link to="/join-us">JoinUs</Link>
+          </button>
+        </div><br></br>
+        <p>Qr8tors Manifesto by Qr8tors Idea Lab</p>
+        <h4>Follow Us</h4><br></br>
+        <div className="socialLogo">
+          <span>
+            <a href="#"><img src={fblogo} alt="fb_logo" style={{ maxHeight: '30px' }} /> </a>
+            <a href="#"><img src={iglogo} alt="ig_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
+            <a href="#"><img src={twlogo} alt="tw_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
+          </span>
         </div>
       </div>
 
