@@ -27,7 +27,6 @@ class Landing extends Component {
             <Link to="/manifesto">Manifesto</Link>
           </button>
         </div><br></br>
-        <p>Qr8tors Manifesto by Qr8tors Idea Lab</p>
         <h4>Follow Us</h4><br></br>
         <div className="socialLogo">
           <span>
