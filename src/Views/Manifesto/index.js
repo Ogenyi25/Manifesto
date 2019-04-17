@@ -35,13 +35,17 @@ class Manifesto extends Component {
           </h3>
           <ol>
             {manifesto.map((manifest, index) => (
-              <li key={`manifest_${index}`}>{manifest}</li>
+              <p key={`manifest_${index}`} style={{ listStyleType: "upper-roman" }}>{manifest}</p>
             ))}
           </ol>
           <p>
             Qr8tors is a community where creative individuals connect with other
             creatives and develop projects that move culture forward.
           </p>
+          <p>
+            The community comprises of artists, tech enthusiasts, creative designers, programmers, architects, entreprenuers and poets.
+          </p>
+          <br></br>
           <p>Our interest include:</p>
           <ul className="plus">
             <li>Internet/Pop Culture</li>
