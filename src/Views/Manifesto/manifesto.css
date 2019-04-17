@@ -19,10 +19,11 @@
   text-align: center;
 }
 
-/* .manifesto .manifesto-body .plus li:before {
+.manifesto .manifesto-body .plus li:before {
   content: "+";
   margin-right: 4px;
-} */
+  
+}
 
 .manifesto .manifesto-logo-container {
   text-align: center;
@@ -50,3 +51,5 @@
   align-items: center;
   border-spacing: 50%;
 }
+
+
