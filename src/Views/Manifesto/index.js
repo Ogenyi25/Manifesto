@@ -17,6 +17,36 @@ const manifesto = [
   "Insert yours here"
 ];
 
+const romanNum = [
+  "M",
+  "CM",
+  "D",
+  "CD",
+  "C",
+  "XC",
+  "L",
+  "XL",
+  "X",
+  "IX",
+  "V",
+  "IV",
+  "I"
+];
+// decimal number
+var dNum = new Array();
+dNum = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+function decimalRoman(value) {
+  if (value <= 0 || value >= 4000) return value;
+  var romanNumeral = "";
+  for (var i = 0; i < romanNum.length; i++) {
+    while (value >= dNum[i]) {
+      value -= dNum[i];
+      romanNumeral += romanNum[i];
+    }
+  }
+  return romanNumeral;
+}
+
 class Manifesto extends Component {
   render() {
     return (
@@ -33,24 +63,32 @@ class Manifesto extends Component {
           >
             Qr8tors Manifesto
           </h3>
-          <ol>
+          <div className="manifesto-content">
             {manifesto.map((manifest, index) => (
-              <li key={`manifest_${index}`}>{manifest}</li>
+              <div key={`manifest_${index}`}>
+                <p>{decimalRoman(index + 1)}</p>
+                <p>{manifest}</p>
+              </div>
             ))}
-          </ol>
+          </div>
           <p>
             Qr8tors is a community where creative individuals connect with other
             creatives and develop projects that move culture forward.
           </p>
-          <p>Our interest include:</p>
-          <ul className="plus">
-            <li>Internet/Pop Culture</li>
-            <li>Tech Innovations</li>
-            <li>Media & Entertainment</li>
-            <li>Urbanization</li>
-            <li>Sustainable Design</li>
-            <li>Digital Economy</li>
-          </ul>
+          <br />
+          <p>
+            The community compromises of artists, tech enthusiasts, creative
+            designers, programmers, architects, entrepreneurs and poets.
+          </p>
+          <div className="plus">
+          <h3 >Our interest include:</h3>
+            <p> + Internet/Pop Culture</p>
+            <p> + Tech Innovations</p>
+            <p> + Media & Entertainment</p>
+            <p> + Urbanization</p>
+            <p> + Sustainable Design</p>
+            <p> + Digital Economy</p>
+          </div>
           <div
             style={{
               textAlign: "center"

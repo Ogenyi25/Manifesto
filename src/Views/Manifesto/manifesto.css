@@ -4,7 +4,7 @@
   margin: auto;
 }
 
-.manifesto .manifesto-body ol {
+.manifesto .manifesto-body .manifesto-content {
   list-style-type: lower-roman;
   text-align: center;
 }
@@ -15,7 +15,8 @@
 }
 
 .manifesto .manifesto-body .plus {
-  list-style: square;
+  list-style: none;
+  text-align: center;
 }
 
 /* .manifesto .manifesto-body .plus li:before {
