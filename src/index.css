@@ -53,7 +53,7 @@ button {
   border: none;
   border-radius: 5px;
   position: relative;
-  border-bottom: 4px solid #cdcdcd;
+  border-bottom: 4px solid #696969;
   font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   font-size: 15px;
@@ -77,10 +77,10 @@ button:after {
   width: 0;
   height: 0;
   display: block;
-  border-top: 20px solid #cdcdcd;
-  border-bottom: 20px solid #cdcdcd;
+  border-top: 20px solid #696969;
+  border-bottom: 20px solid #696969;
   border-left: 16px solid transparent;
-  border-right: 20px solid #cdcdcd;
+  border-right: 20px solid #696969;
   position: absolute;
   opacity: 0.6;
   right: 0;
@@ -98,10 +98,10 @@ button.back:after {
   width: 0;
   height: 0;
   display: block;
-  border-top: 20px solid #cdcdcd;
-  border-bottom: 20px solid #cdcdcd;
+  border-top: 20px solid #696969;
+  border-bottom: 20px solid #696969;
   border-right: 16px solid transparent;
-  border-left: 20px solid #cdcdcd;
+  border-left: 20px solid #696969;
   position: absolute;
   opacity: 0.6;
   left: 0;

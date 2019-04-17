@@ -21,10 +21,10 @@ class Landing extends Component {
         </div>
         <div className="button-container" >
           <button>
-            <Link to="/join-us">JoinUs</Link>
+            <Link to="/manifesto">Manifesto</Link>
           </button>
           <button className="back" >
-            <Link to="/manifesto">Manifesto</Link>
+            <Link to="/join-us">JoinUs</Link>
           </button>
         </div><br></br>
         <h4>Follow Us</h4><br></br>
