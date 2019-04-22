@@ -14,7 +14,7 @@ const manifesto = [
   "Stumbling blocks don't end the road.",
   "Our goal is not perfection.",
   "We constantly evaluate our path.",
-  "Insert yours here"
+  '"Insert yours here"'
 ];
 
 const romanNum = [
@@ -55,14 +55,14 @@ class Manifesto extends Component {
           <img src={logo} alt="qr8tors_logo" />
         </div>
         <div className="manifesto-body">
-          <h3
+          <h1
             style={{
               textAlign: "center",
               fontFamily: "Impact"
             }}
           >
             Qr8tors Manifesto
-          </h3>
+          </h1>
           <div className="manifesto-content">
             {manifesto.map((manifest, index) => (
               <div key={`manifest_${index}`}>
@@ -81,7 +81,7 @@ class Manifesto extends Component {
             designers, programmers, architects, entrepreneurs and poets.
           </p>
           <div className="plus">
-          <h3 >Our interest include:</h3>
+          <h3>Our interest include:</h3>
             <p> + Internet/Pop Culture</p>
             <p> + Tech Innovations</p>
             <p> + Media & Entertainment</p>
@@ -102,21 +102,21 @@ class Manifesto extends Component {
               <h4 style={{ textAlign: "center" }}>Follow Us</h4>
               <div className="socialLogo">
                 <span>
-                  <a href="#">
+                  <a href="https://www.facebook.com/Qr8torsLab/">
                     <img
                       src={fblogo}
                       alt="fb_logo"
                       style={{ maxHeight: "30px" }}
                     />{" "}
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/qr8torslab/">
                     <img
                       src={iglogo}
                       alt="ig_logo"
                       style={{ marginLeft: "30px", maxHeight: "30px" }}
                     />{" "}
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/qr8tors">
                     <img
                       src={twlogo}
                       alt="tw_logo"

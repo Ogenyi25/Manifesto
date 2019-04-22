@@ -30,9 +30,9 @@ class Landing extends Component {
         <h4>Follow Us</h4><br></br>
         <div className="socialLogo">
           <span>
-            <a href="#"><img src={fblogo} alt="fb_logo" style={{ maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={iglogo} alt="ig_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
-            <a href="#"><img src={twlogo} alt="tw_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
+            <a href="https://www.facebook.com/Qr8torsLab/"><img src={fblogo} alt="fb_logo" style={{ maxHeight: '30px' }} /> </a>
+            <a href="https://www.instagram.com/qr8torslab/"><img src={iglogo} alt="ig_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
+            <a href="https://twitter.com/qr8tors"><img src={twlogo} alt="tw_logo" style={{ marginLeft: '30px', maxHeight: '30px' }} /> </a>
           </span>
         </div>
       </div>
