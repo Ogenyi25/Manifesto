@@ -55,14 +55,14 @@ class Manifesto extends Component {
           <img src={logo} alt="qr8tors_logo" />
         </div>
         <div className="manifesto-body">
-          <h1
+          <h2
             style={{
               textAlign: "center",
               fontFamily: "Impact"
             }}
           >
             Qr8tors Manifesto
-          </h1>
+          </h2>
           <div className="manifesto-content">
             {manifesto.map((manifest, index) => (
               <div key={`manifest_${index}`}>

@@ -4,6 +4,11 @@
   margin: auto;
 }
 
+.manifesto .manifesto-body h2 {
+  color: gray;
+  font-size: 24px;
+}
+
 .manifesto .manifesto-body .manifesto-content {
   list-style-type: lower-roman;
   text-align: center;
